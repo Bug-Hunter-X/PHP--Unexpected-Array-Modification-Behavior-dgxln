@@ -1,0 +1,3 @@
+# PHP: Pass-by-Reference Pitfalls
+
+This example demonstrates a common error in PHP when working with arrays and functions:  failure to use pass-by-reference when modifying array elements within a function.  The `badIncrementArray` function shows how a seemingly simple attempt to increment array elements fails if pass-by-reference isn't used.  The correct version, `incrementArray`, showcases the necessary use of `&` before the `$arr` parameter to ensure modifications affect the original array.  The example also includes a contrast between correctly using a pass-by-value method using a return value.
